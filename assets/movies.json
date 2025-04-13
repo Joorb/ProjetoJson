@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Avatar",
+    "year": 2009,
+    "text": "In a distant future, paraplegic marine Jake Sully is sent to Pandora, where he becomes an avatar in the body of the planet’s native Na'vi to infiltrate and mine precious resources. As he bonds with the tribe, Jake must choose between following orders or protecting the land and its people.",
+    "image":"assets/img/a.jpg"
+  },
+  {
+    "title": "Avengers: Endgame",
+    "year": 2019,
+    "text": "After Thanos wipes out half of all life in the universe, the surviving Avengers unite to reverse the damage. With time-travel and epic battles, they face one final stand to restore peace and avenge their fallen friends.",
+    "image":"assets/img/u.jpeg"
+  },
+  {
+    "title": "Titanic",
+    "year": 1997,
+    "text": "A passionate love story unfolds between aristocrat Rose and struggling artist Jack aboard the ill-fated RMS Titanic. As the ship sinks, their forbidden romance becomes a tale of sacrifice and survival.",
+    "image":"assets/img/t.jpg"
+  },
+  {
+    "title": "Star Wars: The Force Awakens",
+    "year": 2015,
+    "text": "Decades after the fall of the Empire, a new threat arises. Rey, a scavenger with a mysterious past, joins Han Solo and the Resistance to fight the First Order and rediscover the whereabouts of the missing Luke Skywalker.",
+    "image":"assets/img/sw.jpeg"
+  },
+  {
+    "title": "Avengers: Infinity War",
+    "year": 2018,
+    "text": "The Avengers and their allies must stop the intergalactic warlord Thanos from collecting all six Infinity Stones, which he plans to use to wipe out half of the universe’s population in his quest for balance.",
+    "image":"assets/img/gi.jpg"
+  },
+  {
+    "title": "Jurassic World",
+    "year": 2015,
+    "text": "A new theme park featuring genetically engineered dinosaurs spirals into chaos when a hybrid dinosaur escapes its enclosure. A former Navy vet and park staff race to contain the beast and save the visitors.",
+    "image":"assets/img/jw.webp"
+  },
+  {
+    "title": "The Lion King",
+    "year": 1994,
+    "text": "In this animated classic, young lion cub Simba must reclaim his rightful place as king after his father, Mufasa, is killed by his uncle Scar. With the help of friends, Simba overcomes guilt, fear, and treachery to bring peace to the Pride Lands.",
+    "image":"assets/img/rl.webp"
+  },
+  {
+    "title": "The Avengers",
+    "year": 2012,
+    "text": "Earth's mightiest heroes—Iron Man, Thor, Captain America, and the Hulk—team up to stop Loki and his alien army from conquering Earth. They must learn to fight together to save the planet.",
+    "image":"assets/img/v.jpg"
+  },
+  {
+    "title": "Furious 7",
+    "year": 2015,
+    "text": "The Fast and Furious family faces their toughest challenge yet as they confront Deckard Shaw, a rogue assassin seeking revenge for his brother. The high-octane action takes them across the globe as they attempt to save one of their own.",
+    "image":"assets/img/vef7.jpg"
+  },
+  {
+    "title": "Frozen II",
+    "year": 2019,
+    "text": "Elsa, Anna, Kristoff, and Olaf venture beyond Arendelle to discover the source of Elsa’s powers and save their kingdom from an ancient curse. Along the way, they uncover long-buried truths about their past.",
+    "image":"assets/img/f2.jpg"
+  }
+]
