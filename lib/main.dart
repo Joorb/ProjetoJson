@@ -47,7 +47,13 @@ class _MainAppState extends State<MainApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: const Text('Sorteio de Filmes')),
+        appBar: AppBar(
+          title: const Text('Sorteio de Filmes',
+            style: TextStyle(fontSize: 24, fontFamily: 'Poppins'),
+          ),
+          backgroundColor: const Color.fromARGB(255, 239, 206, 245),
+        ),
+        backgroundColor: const Color.fromARGB(255, 239, 206, 245),
         body: Center(
           child: mostrarFilme
               ? Column(
@@ -57,15 +63,23 @@ class _MainAppState extends State<MainApp> {
                     SizedBox(height: 20),
                     Text(
                       'Filme Sorteado: ${filmeSorteado.titulo}',
-                      style: TextStyle(fontSize: 24),
+                      style: TextStyle(fontSize: 24, fontFamily: 'Poppins'),
                     ),
                     Text(
                       'Ano de Lançamento: ${filmeSorteado.ano}',
-                      style: TextStyle(fontSize: 24),
+                      style: TextStyle(fontSize: 24, fontFamily: 'Poppins'),
                     ),
+                    SizedBox(height: 10),
+                    Text(
+                        'Descrição: ${filmeSorteado.descricao}',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(fontSize: 18, fontFamily: 'Poppins'),
+                      ),
+                    SizedBox(height: 20),
+                    
                     Text(
                       'Total de Filmes: $total',
-                      style: TextStyle(fontSize: 18),
+                      style: TextStyle(fontSize: 18, fontFamily: 'Poppins'),
                     ),
                     SizedBox(height: 5),
                     ElevatedButton(
