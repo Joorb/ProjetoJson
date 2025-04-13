@@ -48,51 +48,131 @@ class _MainAppState extends State<MainApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Sorteio de Filmes',
-            style: TextStyle(fontSize: 24, fontFamily: 'Poppins'),
+          centerTitle: true,
+          title: const Text(
+            'Sorteio de Filmes',
+            style: TextStyle(
+              fontSize: 24,
+              fontFamily: 'Poppins',
+              color: Color.fromARGB(255, 255, 255, 255),
+            ),
           ),
-          backgroundColor: const Color.fromARGB(255, 239, 206, 245),
-        ),
-        backgroundColor: const Color.fromARGB(255, 239, 206, 245),
-        body: Center(
-          child: mostrarFilme
-              ? Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image.asset(filmeSorteado.img, width: 200, height: 200),
-                    SizedBox(height: 20),
-                    Text(
-                      'Filme Sorteado: ${filmeSorteado.titulo}',
-                      style: TextStyle(fontSize: 24, fontFamily: 'Poppins'),
-                    ),
-                    Text(
-                      'Ano de Lançamento: ${filmeSorteado.ano}',
-                      style: TextStyle(fontSize: 24, fontFamily: 'Poppins'),
-                    ),
-                    SizedBox(height: 10),
-                    Text(
-                        'Descrição: ${filmeSorteado.descricao}',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 18, fontFamily: 'Poppins'),
+          backgroundColor:Color.fromARGB(255, 182, 98, 255),
+        ), 
+        backgroundColor:Color.fromARGB(255, 182, 98, 255),
+        body: Container( 
+          child: Center(
+              child: mostrarFilme
+                ? SizedBox(
+                  width: 450,
+                   child: Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
                       ),
-                    SizedBox(height: 20),
-                    
-                    Text(
-                      'Total de Filmes: $total',
-                      style: TextStyle(fontSize: 18, fontFamily: 'Poppins'),
-                    ),
-                    SizedBox(height: 5),
-                    ElevatedButton(
-                      onPressed: sorteiaFilme,
-                      child: const Text('Sortear Novo Filme'),
+                      color: const Color.fromARGB(255, 218, 177, 255),
+                      elevation: 10,
+                      child: Padding(
+                        padding: const EdgeInsets.all(24.0),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                              Image.asset(
+                                filmeSorteado.img,
+                                width: 200,
+                                height: 200,
+                              ),
+                            const SizedBox(height: 20),
+                            Center(
+                              child: Row(
+                                 mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  const Icon(Icons.movie, 
+                                    color: Color.fromARGB(255, 182, 98, 255),),
+                                  const SizedBox(width: 8),
+                                  Text(
+                                    'Filme: ${filmeSorteado.titulo}',
+                                    style: const TextStyle(
+                                      fontSize: 20,
+                                      fontFamily: 'Poppins',
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(height: 8),
+                            Center(
+                              child : Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  const Icon(Icons.calendar_today,
+                                    color: Color.fromARGB(255, 182, 98, 255),),
+                                  const SizedBox(width: 8),
+                                  Text(
+                                    'Ano: ${filmeSorteado.ano}',
+                                    style: const TextStyle(
+                                      fontSize: 18,
+                                      fontFamily: 'Poppins',
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(height: 12),
+                            Column(
+                            children: [ 
+                              const Text(
+                                'Descrição:',
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  color: Color.fromARGB(255, 0, 0, 0),
+                                ),
+                              ),
+                            const SizedBox(height: 4),
+                            Text(
+                              filmeSorteado.descricao,
+                              style: const TextStyle(
+                                fontSize: 16,
+                                color: Color.fromARGB(255, 0, 0, 0),
+                              ),
+                            ),
+                            ],
+                            ),
+                            const SizedBox(height: 16),
+                            Text(
+                              'Total de Filmes: $total',
+                              style: const TextStyle(
+                                fontSize: 16,
+                                color: Color.fromARGB(255, 0, 0, 0),
+                              ),
+                            ),
+                            const SizedBox(height: 16),
+                            ElevatedButton.icon(
+                              onPressed: sorteiaFilme,
+                              icon: const Icon(Icons.refresh),
+                              label: const Text('Sortear Novo Filme'),
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: const Color.fromARGB(255, 182, 98, 255),
+                                foregroundColor: Colors.white,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                     )
-                  ],
                 )
-                
-              :       ElevatedButton(
+                  : ElevatedButton(
                       onPressed: sorteiaFilme,
-                      child: const Text('Sortear Novo Filme'),
+                      child: const Text('Sortear Filme'),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.deepPurple,
+                        foregroundColor: Colors.white,
+                        textStyle: const TextStyle(fontSize: 18),
+                      ),
                     ),
+          ),
         ),
       ),
     );
